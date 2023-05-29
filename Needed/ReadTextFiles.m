@@ -3,6 +3,7 @@ nfiles=length(files);
 for nfile=1:nfiles
     fprintf('%3i %s \n',nfile,files(nfile).name);
 end
+
 nfile=input('Input file number ');
 dd=importdata(files(nfile).name);
 fprintf('%s \n',...
